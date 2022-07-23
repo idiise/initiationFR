@@ -115,7 +115,6 @@ nlevels(dataset$Admin.1)
 
 Créer les vecteurs suivantes
 
-Create the following vectors
 
 vec1 = 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5
 
