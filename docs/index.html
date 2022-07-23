@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="By Idrissa Dabo" />
+
+<meta name="date" content="2022-07-23" />
+
+<title>Initiation</title>
+
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Initiation</h1>
+<h4 class="author">By Idrissa Dabo</h4>
+<h4 class="date">2022-07-23</h4>
+
+</div>
+
+
+<div id="raccourcis-clavier-importants" class="section level2">
+<h2>Raccourcis clavier importants</h2>
+<p>pour voir les raccourcis clavier cliquer sur tools puis sur keyboard
+Shortcuts help oubien cliquer sur <strong>Alt + shift + k</strong>.
+Quelques raccourcis que j’utilise régulièrement pour mieux organiser mes
+syntax:</p>
+<ul>
+<li><p>Pour commenter ou enlever un commentaire <strong>ctrl + shift +
+c</strong></p></li>
+<li><p>Pour exécuter une ou des lignes selectionnées <strong>ctrl +
+enter</strong></p></li>
+<li><p>Pour créer une section <strong>ctrl + shift + R</strong></p></li>
+<li><p>Pour exécuter une section <strong>ctrl + shift +
+t</strong></p></li>
+<li><p>pour supprimer une ou des lignes <strong>ctrl +
+D</strong></p></li>
+</ul>
+</div>
+<div id="section-1-les-objets" class="section level2">
+<h2>Section 1 Les objets</h2>
+<p>R permet de manipuler plusieurs bases de données simultanément à
+travers les <em>objets</em>. Un objet est tout simplement une
+affectation. Pour créer un objet cliquer sur <strong>Alt + 6</strong> ou
+<strong>Alt + -</strong>. Dans l’exemlpe ci-desous nous allons créer 3
+objets <strong>a, b et d</strong></p>
+<pre class="r"><code>a &lt;- 2
+b &lt;- 10
+d &lt;- a+b</code></pre>
+<p>Pour créer des chaines de caractères il faut mettre l’objet entre
+quote <strong>” “</strong>.</p>
+<p>Exemple:</p>
+<pre class="r"><code>nom &lt;- &quot;abdoulaye&quot;
+pays &lt;- &quot;togo&quot;</code></pre>
+</div>
+<div id="section-2-les-vecteurs" class="section level2">
+<h2>Section 2 Les vecteurs</h2>
+<p>Un vecteur correspond à une colonne dans Excel. Pour créer des
+vecteurs on utilise <em><em>quatre fonctions</em></em> : collect
+<strong>c()</strong>, répeter <strong>rep()</strong> et les fonctions
+séquence <strong>:</strong> et <strong>seq()</strong></p>
+<pre class="r"><code>prenom &lt;- c(&quot;Idrissa&quot;, &quot;mawli&quot;, &quot;Abdoulaye&quot;)
+Pays &lt;- c(&quot;Senegal&quot;, &quot;Togo&quot;,&quot;Mali&quot;)
+age &lt;- c(32,35,34)</code></pre>
+<p>pour répeter Mawli 100 fois dans une colonne excel on l’écrit 100
+fois oubien on l’écrit une fois puis on tire vers le bas pour l’avoir
+100 fois. Qu’en est-il s’il faut écrire Mawli 10000 fois ? Avec r il
+existe une fonction simple qui permet d’écrire mawli 10000 fois en une
+seule ligne de code. Voici quelques exemples ci-dessous</p>
+<pre class="r"><code>mawli_10000_fois &lt;- rep(&quot;mawli&quot;, 10000)
+age2 &lt;- c(32,35,rep(34,2))
+rep(&quot;mawli&quot;, 100)</code></pre>
+<pre><code>##   [1] &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot;
+##  [10] &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot;
+##  [19] &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot;
+##  [28] &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot;
+##  [37] &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot;
+##  [46] &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot;
+##  [55] &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot;
+##  [64] &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot;
+##  [73] &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot;
+##  [82] &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot;
+##  [91] &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot; &quot;mawli&quot;
+## [100] &quot;mawli&quot;</code></pre>
+<p>Pour des sequences de valeurs successives on utilise la foncion deux
+points <strong>:</strong> Pour des séquences avec des pas ou une taille
+on utilise la fonction <strong>seq</strong></p>
+<pre class="r"><code>testsequence &lt;- 10:30
+
+testsequence2 &lt;- seq(from = 10, to = 100, by = 5)
+testsequence3 &lt;- seq(10,100,5)</code></pre>
+<p>Pour metre tous ces vecteurs ou colonnes dans la même base de données
+on utilise la fonction data.frames</p>
+<pre class="r"><code>donne &lt;- data.frame(prenom, Pays, age)</code></pre>
+</div>
+<div id="base-de-données" class="section level2">
+<h2>Base de données</h2>
+<p>Pour avoir les dimensions d’une base de donnée, ou avoir un aperçu
+sur les différentes avariables et leur type on utilise respectivement
+les fonctions <strong>dim</strong> et <strong>str()</strong>. Pour avoir
+le type d’une variable on peut utiliser la fonction
+<strong>class()</strong></p>
+<pre class="r"><code># dimension de la base de donnée
+dim(donne)</code></pre>
+<pre><code>## [1] 3 3</code></pre>
+<pre class="r"><code># variables et types
+str(donne)</code></pre>
+<pre><code>## &#39;data.frame&#39;:    3 obs. of  3 variables:
+##  $ prenom: chr  &quot;Idrissa&quot; &quot;mawli&quot; &quot;Abdoulaye&quot;
+##  $ Pays  : chr  &quot;Senegal&quot; &quot;Togo&quot; &quot;Mali&quot;
+##  $ age   : num  32 35 34</code></pre>
+<pre class="r"><code># type de la variable
+class(donne$prenom)</code></pre>
+<pre><code>## [1] &quot;character&quot;</code></pre>
+<p>si vous voulez directement accéder aux variables sans utiliser le
+symbol <strong>$</strong> comme dans l’exemple ci-dessus il faut
+utiliser la fonction attach()</p>
+<pre class="r"><code>attach(donne)</code></pre>
+<pre><code>## Les objets suivants sont masqués _par_ .GlobalEnv:
+## 
+##     age, Pays, prenom</code></pre>
+<pre class="r"><code>class(age)</code></pre>
+<pre><code>## [1] &quot;numeric&quot;</code></pre>
+<div id="importer-une-base-de-donnée" class="section level3">
+<h3>importer une base de donnée</h3>
+<p>Dans cette partie il nous allons importer une base de donnée sans
+utiliser des packages. Avant d’importer la base il faut d’abord
+identifier le repertoire de travail grâce à la fonction
+<strong>getwd()</strong>. Pour changer le repertoire de travail la
+fonction <strong>setwd()</strong> peut être utilisée</p>
+<pre class="r"><code>getwd()</code></pre>
+<pre><code>## [1] &quot;C:/Users/USER MSI/Documents/R Project/initiationFR&quot;</code></pre>
+<pre class="r"><code># setwd(&quot;C:\\Users\\USER MSI\\Documents\\Data-scientist group&quot;)</code></pre>
+<p>Dans l’exemple ci-dessous nous allons importer les données du Burkina
+disponibles dans la plateforme dataviz du PAM : <a
+href="https://dataviz.vam.wfp.org/economic_explorer/prices"
+class="uri">https://dataviz.vam.wfp.org/economic_explorer/prices</a></p>
+<pre class="r"><code>getwd()</code></pre>
+<pre><code>## [1] &quot;C:/Users/USER MSI/Documents/R Project/initiationFR&quot;</code></pre>
+<pre class="r"><code># changer le repertoire de travail
+# setwd(&quot;votre repertoire&quot;) 
+dataset &lt;- read.csv(&quot;WFP_2022Jul23_BurkinaFaso_FoodPricesData.csv&quot;)
+str(dataset)</code></pre>
+<pre><code>## &#39;data.frame&#39;:    40909 obs. of  11 variables:
+##  $ Country    : chr  &quot;Burkina Faso&quot; &quot;Burkina Faso&quot; &quot;Burkina Faso&quot; &quot;Burkina Faso&quot; ...
+##  $ Admin.1    : chr  &quot;BOUCLE DU MOUHOUN&quot; &quot;BOUCLE DU MOUHOUN&quot; &quot;BOUCLE DU MOUHOUN&quot; &quot;BOUCLE DU MOUHOUN&quot; ...
+##  $ Market     : chr  &quot;Tougan&quot; &quot;Tougan&quot; &quot;Tougan&quot; &quot;Tougan&quot; ...
+##  $ Commodity  : chr  &quot;Rice (imported)&quot; &quot;Rice (imported)&quot; &quot;Rice (imported)&quot; &quot;Rice (imported)&quot; ...
+##  $ Price.Type : chr  &quot;Retail&quot; &quot;Retail&quot; &quot;Retail&quot; &quot;Retail&quot; ...
+##  $ Year       : int  2020 2020 2020 2020 2020 2020 2020 2020 2020 2021 ...
+##  $ Month      : int  4 5 6 7 8 9 10 11 12 1 ...
+##  $ Price      : num  400 400 400 400 400 400 400 400 400 400 ...
+##  $ Unit       : chr  &quot;KG&quot; &quot;KG&quot; &quot;KG&quot; &quot;KG&quot; ...
+##  $ Currency   : chr  &quot;XOF&quot; &quot;XOF&quot; &quot;XOF&quot; &quot;XOF&quot; ...
+##  $ Data.Source: chr  &quot;SIM/SONAGESS&quot; &quot;SIM/SONAGESS&quot; &quot;SIM/SONAGESS&quot; &quot;SIM/SONAGESS&quot; ...</code></pre>
+<pre class="r"><code># Pour tabuler le nombre d&#39;année ou la région
+table(dataset$Year)</code></pre>
+<pre><code>## 
+## 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 
+##  132  132  132  132  132  132  132  132  132  132  142  420  438  456  504  480 
+## 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 
+##  660  711  744  744  762  844  840 3373 3540 4199 4228 4295 4784 4958 2467</code></pre>
+<pre class="r"><code>table(dataset$Admin.1)</code></pre>
+<pre><code>## 
+## BOUCLE DU MOUHOUN          CASCADES            CENTRE        CENTRE-EST 
+##              6354              1526              2116              3260 
+##       CENTRE-NORD      CENTRE-OUEST        CENTRE-SUD               EST 
+##              2712              2783              2195              4637 
+##     HAUTS-BASSINS              NORD   PLATEAU-CENTRAL             SAHEL 
+##              3365              2149              1911              4559 
+##         SUD-OUEST 
+##              3342</code></pre>
+<p>Pour avoir les modalités d’une variable qualitative il faut d’abord
+changer son type en facteur.</p>
+<pre class="r"><code>dataset$Admin.1 &lt;- as.factor(dataset$Admin.1)
+class(dataset$Admin.1)</code></pre>
+<pre><code>## [1] &quot;factor&quot;</code></pre>
+<pre class="r"><code># modalités et nombre de modalités
+levels(dataset$Admin.1)</code></pre>
+<pre><code>##  [1] &quot;BOUCLE DU MOUHOUN&quot; &quot;CASCADES&quot;          &quot;CENTRE&quot;           
+##  [4] &quot;CENTRE-EST&quot;        &quot;CENTRE-NORD&quot;       &quot;CENTRE-OUEST&quot;     
+##  [7] &quot;CENTRE-SUD&quot;        &quot;EST&quot;               &quot;HAUTS-BASSINS&quot;    
+## [10] &quot;NORD&quot;              &quot;PLATEAU-CENTRAL&quot;   &quot;SAHEL&quot;            
+## [13] &quot;SUD-OUEST&quot;</code></pre>
+<pre class="r"><code>nlevels(dataset$Admin.1)</code></pre>
+<pre><code>## [1] 13</code></pre>
+</div>
+</div>
+<div id="exercices" class="section level2">
+<h2>Exercices</h2>
+<div id="excercice-1" class="section level3">
+<h3>Excercice 1</h3>
+<p>Créer les vecteurs suivantes</p>
+<p>Create the following vectors</p>
+<p>vec1 = 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5</p>
+<p>vec2 = 1 1 1 2 2 2 3 3 3 4 4 4 5 5 5</p>
+<p>vec3 = 1 1 2 2 2 3 3 3 3 4 4 4 4 4</p>
+<p>vec4 = idrissa idrissa idrissa idrissa idrissa idrissa Mawli Mawli
+Mawli Mawli Mawli Mawli Mawli Mawli Mawli Mawli Mawli Abdoulaye
+Abdoulaye Abdoulaye Abdoulaye Abdoulaye Abdoulaye Abdoulaye Abdoulaye
+Abdoulaye Abdoulaye Abdoulaye Abdoulaye Abdoulaye Abdoulaye
+Abdoulaye</p>
+</div>
+<div id="exercice-2" class="section level3">
+<h3>Exercice 2</h3>
+<ol style="list-style-type: decimal">
+<li><p>A patir de l’image ci-dessous Choisissez la fonction R appropriée
+pour enregistrer les données de chacune des variables précédentes dans
+des vecteurs que vous nommerez Individus, Poids, Taille et Sexe</p></li>
+<li><p>Calculez la moyenne des variables pour lesquelles cela est
+possible.</p></li>
+<li><p>Calculez l’indice de masse corporelle (IMC) des individus et
+regrouper les valeurs obtenues dans un vecteur nommé IMC.
+<strong>Indication</strong> IMC = poids/(taille/100)^2</p></li>
+<li><p>Créer une base de donnée dans laquelle vous aurez Individus,
+Poids, Taille, Sexe et IMC <img
+src="Data.PNG" /></p></li>
+</ol>
+</div>
+<div id="exercice-3" class="section level3">
+<h3>Exercice 3</h3>
+<ol style="list-style-type: decimal">
+<li><p>Importez le fichier <strong>base2.csv</strong> dans un objet R
+nommé caracteristique (le fichier est disponible à partir du lien <a
+href="https://github.com/idiise/Donne_Group_Data-Scientist"
+class="uri">https://github.com/idiise/Donne_Group_Data-Scientist</a>
+)</p></li>
+<li><p>Combien y a t’il d’individu , de variable ? de quel type sont les
+variables ?</p></li>
+<li><p>vérifiez au moyen des fonctions class() et levels() que vos
+variables sont correctement structurées. Quelles sont les modalités des
+variables ?</p></li>
+</ol>
+<p><strong>Référence</strong>: <em><em>le logiciel R Maîtriser le
+langage effectuer des analyses (bio)statistique</em></em></p>
+<p><strong>Référence</strong>: <em><em>R-for-Statistics</em></em></p>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
