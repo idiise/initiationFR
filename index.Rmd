@@ -1,7 +1,7 @@
 ---
-title: "Initiation"
-author: "By Idrissa Dabo"
-date: '2022-07-23'
+title: "Introduction à R"
+author: "R Community Cameroon"
+date: '2024-04-21'
 output:
   html_document:
     toc: true
@@ -83,12 +83,15 @@ class(age)
 ```
 ### importer une base de donnée
 Dans cette partie il nous allons importer une base de donnée sans utiliser des packages. Avant d'importer la base il faut d'abord identifier le repertoire de travail grâce à la fonction **getwd()**. Pour changer le repertoire de travail la fonction **setwd()** peut être utilisée
-```{r}
+```{r }
 getwd()
 # setwd("C:\\Users\\USER MSI\\Documents\\Data-scientist group")
 ```
-Dans l'exemple ci-dessous nous allons importer les données du Burkina disponibles dans la plateforme dataviz du PAM : 
-<https://dataviz.vam.wfp.org/economic_explorer/prices> 
+Dans l'exemple ci-dessous nous allons importer les données du Burkina que vous pouvez télécharger ci-dessous: 
+```{r echo=FALSE}
+xfun::embed_file("WFP_2022Jul23_BurkinaFaso_FoodPricesData.csv")
+```
+
 ```{r}
 getwd()
 # changer le repertoire de travail
@@ -137,7 +140,12 @@ vec4 = idrissa idrissa idrissa idrissa idrissa idrissa Mawli Mawli Mawli Mawli M
 
 ### Exercice 3
 
-1. Importez le fichier **base2.csv**  dans un objet R nommé caracteristique (le fichier est disponible à partir du lien <https://github.com/idiise/Donne_Group_Data-Scientist> )
+1. Importez le fichier **base2.csv**  dans un objet R nommé caracteristique (le fichier est disponible ci-dessous  )
+```{r echo=FALSE}
+xfun::embed_file("base2.csv")
+
+```
+
 
 2. Combien y a t'il d'individu , de variable ? de quel type sont les variables  ?
 
